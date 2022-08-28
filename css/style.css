@@ -37,30 +37,6 @@ nav {
 	text-transform: uppercase;
 	color: #000000;
 }
-
-.menuzinho {
-	display: block;
-	background-color: #f0bc4d;
-	width: fit-content;
-
-	position: absolute;
-	left: 1.5rem;
-
-	visibility: 0;
-	opacity: 0;
-	transform: translateY(-20px);
-	transition: transform 0.2s;
-}
-
-.menuzinho a {
-	padding: 0.5rem 1rem 0.5rem;
-}
-
-.menuzinhoshow {
-	visibility: 1;
-	opacity: 1;
-	transform: translateY(0);
-}
 /* MAIN */
 
 .grid-main {
