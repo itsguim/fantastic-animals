@@ -139,6 +139,7 @@ section#faq .heading {
 	font-family: var(--ffoption);
 	font-weight: bold;
 	letter-spacing: 0.1rem;
+	cursor: pointer;
 }
 
 .faq-list dt::before {
@@ -148,6 +149,16 @@ section#faq .heading {
 	height: 0.7rem;
 	background-color: #f0bc4d;
 	margin-right: 0.5rem;
+	transition: 0.2s;
+}
+
+.faq-list dt::after {
+	content: '+';
+	padding-left: 1rem;
+}
+
+.faq-list dt:hover::before {
+	width: 2.5rem;
 }
 
 .faq-list dd {
@@ -219,7 +230,9 @@ section#contato .main-heading {
 	}
 }
 
-/* SCRIPT CONTENT */
+/* SCRIPT CONTENT ---------------- */
+
+/* Tab Navigation */
 .js-tabcontent .box-animaisinfo {
 	display: none;
 }
@@ -239,4 +252,26 @@ section#contato .main-heading {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+/* Accordion List */
+
+.js-accordion dt.ativo::before {
+	width: 2.5rem;
+}
+
+.js-accordion dt.ativo::after {
+	content: '-';
+}
+
+.js-accordion dd {
+	max-height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	transition: 0.4s;
+}
+
+.js-accordion dd.ativo {
+	max-height: 10rem;
+	visibility: visible;
 }

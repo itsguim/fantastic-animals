@@ -25,4 +25,17 @@ function initAnimalTab() {
 }
 initAnimalTab();
 
+// Accordion
+function initAccordion() {
+  const descriptionSelect = document.querySelectorAll('.js-accordion dt')
 
+  function accordionInsert() {
+    this.classList.toggle('ativo')
+    this.nextElementSibling.classList.toggle('ativo')
+  }
+
+  for (let i = 0; i < descriptionSelect.length; i++) {
+    descriptionSelect[i].addEventListener('click', accordionInsert)
+  }
+}
+initAccordion();
