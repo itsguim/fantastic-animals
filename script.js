@@ -39,3 +39,30 @@ function initAccordion() {
   }
 }
 initAccordion();
+
+// Smooth Scrolling Interno
+const linksInternos = document.querySelectorAll('.js-nav a[href^="#"]')
+
+function initSmoothScroll() {
+  function smoothScrolling(evt) {
+    evt.preventDefault()
+
+    const hrefSelect = this.getAttribute('href')
+    const section = document.querySelector(hrefSelect)
+    // Other method with less support
+    // section.scrollIntoView({
+    //   block: 'start', /* center, end, start */
+    //   behavior: 'smooth'
+    // })
+    const getTop = section.offsetTop
+    window.scrollTo({
+      top: getTop - 20,
+      behavior: 'smooth'
+    })
+  }
+
+  linksInternos.forEach((el) => {
+    el.addEventListener('click', smoothScrolling)
+  })
+}
+initSmoothScroll();
