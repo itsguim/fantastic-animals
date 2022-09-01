@@ -41,9 +41,9 @@ function initAccordion() {
 initAccordion();
 
 // Smooth Scrolling Interno
-const linksInternos = document.querySelectorAll('.js-nav a[href^="#"]')
 
 function initSmoothScroll() {
+  const linksInternos = document.querySelectorAll('.js-nav a[href^="#"]')
   function smoothScrolling(evt) {
     evt.preventDefault()
 
