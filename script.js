@@ -66,3 +66,24 @@ function initSmoothScroll() {
   })
 }
 initSmoothScroll();
+
+// Scroll reveal Animation
+
+function initScrollReveal() {
+
+  const sections = document.querySelectorAll('.js-scrollanim')
+
+  function scrollRevealAnim() {
+
+    for (i = 0; i < sections.length; i++) {
+      const scrollTrigger = window.innerHeight * 0.75
+      const topDistance = sections[i].getBoundingClientRect().top - scrollTrigger
+      if (topDistance < 0) {
+        sections[i].classList.add('ativo')
+      }
+    }
+  }
+  scrollRevealAnim()
+
+  window.addEventListener('scroll', scrollRevealAnim)
+} initScrollReveal()
