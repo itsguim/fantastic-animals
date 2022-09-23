@@ -5,6 +5,9 @@
 	--ffoption: 'Roboto', sans-serif;
 	--ffrale: 'Raleway', sans-serif;
 	--ff3: 'Quicksand', sans-serif;
+
+	--nav-h-large: 5.1rem;
+	--nav-h-small: 2.5rem;
 }
 
 .wrapper {
@@ -14,6 +17,7 @@
 
 body {
 	background-color: #faf6ed;
+	position: relative;
 }
 
 h1 {
@@ -22,20 +26,29 @@ h1 {
 
 /* NAVBAR */
 nav {
-	background-color: #f0bc4d;
 	font-family: var(--ffamily);
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	width: 100%;
+	max-height: var(--nav-h-large);
+
+	background: #f0bc4d;
+	transition: 0.8s;
 }
 
 .navbar {
 	display: flex;
-	position: relative;
+	justify-items: flex-start;
+	align-items: center;
+	padding-inline: 1rem;
 }
 
 .nav-link {
 	font-size: inherit;
-	padding: 1rem;
 	text-transform: uppercase;
 	color: #000000;
+	padding: 1.3rem 1rem;
 }
 /* MAIN */
 
@@ -290,12 +303,18 @@ section#contato .main-heading {
 .js-scrollanim {
 	opacity: 0;
 	visibility: hidden;
-	transform: translate3d(-4rem, 0, 0);
-	transition: 0.4s;
+	transform: translate3d(-12rem, 0, 0);
+	transition: 0.7s;
 }
 
 .js-scrollanim.ativo {
 	opacity: 1;
 	visibility: visible;
 	transform: translate3d(0, 0, 0);
+}
+
+/* Smaller nav when scrolling - .nav-small added via DOM */
+
+nav.nav-small {
+	max-height: var(--nav-h-small);
 }

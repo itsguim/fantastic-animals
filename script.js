@@ -87,3 +87,22 @@ function initScrollReveal() {
 
   window.addEventListener('scroll', scrollRevealAnim)
 } initScrollReveal()
+
+// Fixed navbar transition
+
+const navSelect = document.querySelector('nav')
+const navInnerHeight = navSelect.offsetHeight
+
+function navbarScrollTrigger() {
+  const getWindowYValue = this.scrollY
+
+  if (getWindowYValue > navInnerHeight) {
+    navSelect.classList.add('nav-small')
+  } else if (getWindowYValue <= navInnerHeight) {
+    navSelect.classList.remove('nav-small')
+  }
+}
+
+window.addEventListener('scroll', navbarScrollTrigger)
+
+
