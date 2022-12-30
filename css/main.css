@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100;300&family=Roboto:wght@100;300&display=swap');
+
+:root {
+	--ffamily: 'IBM Plex Mono', monospace;
+	--ffoption: 'Roboto', sans-serif;
+	--ffrale: 'Raleway', sans-serif;
+	--ff3: 'Quicksand', sans-serif;
+	--nav-h-large: 5.1rem;
+	--nav-h-small: 2.5rem;
+}
+
+.wrapper {
+	max-width: 95%;
+	margin-inline: auto;
+}
+
+body {
+	background-color: #faf6ed;
+	position: relative;
+}
+
+/* main structure */
+
+.grid-main {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+}
+
+.main-heading {
+	font-family: var(--ff3);
+	text-transform: uppercase;
+	font-size: clamp(3rem, 10vw, 6rem);
+	padding: 5rem 0 3rem 1rem;
+}
+
+/* DOM - scroll-reveal.js */
+
+[data-scrollreveal] {
+	opacity: 0;
+	visibility: hidden;
+	transform: translate3d(-10rem, 0, 0);
+	transition: 0.4s;
+}
+
+[data-scrollreveal].ativo {
+	opacity: 1;
+	visibility: visible;
+	transform: translate3d(0, 0, 0);
+}

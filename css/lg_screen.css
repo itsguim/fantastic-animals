@@ -1,0 +1,19 @@
+@media screen and (min-width: 1280px) {
+	.main-heading:not(#contato .main-heading) {
+		margin-inline: auto;
+	}
+
+	section#animais {
+		grid-template-rows: min-content;
+		padding-bottom: 6rem;
+	}
+
+	section#animais p {
+		font-size: 1.1rem;
+	}
+
+	section#faq .heading,
+	section#contato .main-heading {
+		margin-inline: auto;
+	}
+}

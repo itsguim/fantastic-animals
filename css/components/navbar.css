@@ -1,0 +1,30 @@
+nav {
+	font-family: var(--ffamily);
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	width: 100%;
+	max-height: var(--nav-h-large);
+	background: #f0bc4d;
+	transition: 0.8s;
+}
+
+.navbar {
+	display: flex;
+	justify-items: flex-start;
+	align-items: center;
+	padding-inline: 1rem;
+}
+
+.nav-link {
+	font-size: inherit;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 1.3rem 1rem;
+}
+
+/* DOM - navbar-small.js */
+
+nav.nav-small {
+	max-height: var(--nav-h-small);
+}

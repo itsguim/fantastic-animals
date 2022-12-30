@@ -5,15 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animais Fantásticos - MADE</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Animais Fantásticos - Home</title>
   <link rel="stylesheet" href="css/global.css">
 </head>
 
 <body>
 
-  <nav>
-    <ul class="navbar js-nav">
+  <nav data-nav-change="small">
+    <ul class="navbar">
       <li>
         <a href="#animais" class="nav-link">Animais</a>
       </li>
@@ -24,7 +23,7 @@
         <a href="#contato" class="nav-link">Contato</a>
       </li>
       <li>
-        <a href="https://github.com/itsguim/fantastic-animals" class="nav-link">Dev →</a>
+        <a href="https://origamid.com" class="nav-link">Dev →</a>
       </li>
     </ul>
   </nav>
@@ -33,30 +32,30 @@
     <div class="grid-main wrapper">
       <h1 class="main-heading">Animais<br>Fantásticos</h1>
 
-      <section id="animais" class="grid-section js-scrollanim">
-        <ul class="slider-gallery js-tabmenu">
-          <li>
-            <img src="img/imagem1.jpg">
+      <section id="animais" class="grid-section" data-scrollreveal>
+        <ul class="slider-gallery">
+          <li data-content="image">
+            <img src="assets/imagem1.jpg">
           </li>
-          <li>
-            <img src="img/imagem2.jpg">
+          <li data-content="image">
+            <img src="assets/imagem2.jpg">
           </li>
-          <li>
-            <img src="img/imagem3.jpg">
+          <li data-content="image">
+            <img src="assets/imagem3.jpg">
           </li>
-          <li>
-            <img src="img/imagem4.jpg">
+          <li data-content="image">
+            <img src="assets/imagem4.jpg">
           </li>
-          <li>
-            <img src="img/imagem5.jpg">
+          <li data-content="image">
+            <img src="assets/imagem5.jpg">
           </li>
-          <li>
-            <img src="img/imagem6.jpg">
+          <li data-content="image">
+            <img src="assets/imagem6.jpg">
           </li>
         </ul>
 
-        <div class="boxes-animais js-tabcontent">
-          <div class="box-animaisinfo">
+        <div class="boxes-animais">
+          <div class="box-animaisinfo" data-animate="show-right">
             <h2 class="box-title">Raposa</h2>
             <p>
               As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
@@ -78,7 +77,7 @@
               Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
             </p>
           </div>
-          <div class="box-animaisinfo">
+          <div class="box-animaisinfo" data-animate="show-down">
             <h2 class="box-title">Esquilo</h2>
             <p>
               Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como
@@ -99,7 +98,7 @@
               árvores, onde se sentem mais seguros de predadores terrestres
             </p>
           </div>
-          <div class="box-animaisinfo">
+          <div class="box-animaisinfo" data-animate="show-right">
             <h2 class="box-title">Urso</h2>
             <p>
               O urso-pardo é um mamífero carnívoro da família dos ursídeos. É o urso de mais ampla distribuição
@@ -121,7 +120,7 @@
               larvas, frutas silvestres, mel, pequenos roedores, e grandes animais como cervos e alces.
             </p>
           </div>
-          <div class="box-animaisinfo">
+          <div class="box-animaisinfo" data-animate="show-down">
             <h2 class="box-title">Lobo</h2>
             <p>
               O lobo (também chamado de lobo-cinzento; nome científico: Canis lupus) é uma espécie de mamífero canídeo
@@ -143,7 +142,7 @@
               subpelo é espalhado pelo corpo na forma de grandes tufos no final da primavera ou início do verão
             </p>
           </div>
-          <div class="box-animaisinfo">
+          <div class="box-animaisinfo" data-animate="show-right">
             <h2 class="box-title">Babuíno</h2>
             <p>
               Babuíno é a designação genérica para antropoides cercopitecídeos do gênero Papio e
@@ -167,7 +166,7 @@
               do indivíduo.
             </p>
           </div>
-          <div class="box-animaisinfo">
+          <div class="box-animaisinfo" data-animate="show-down">
             <h2 class="box-title">Leão</h2>
             <p>
               O leão é o segundo maior felino depois do tigre, apresentando comprimento e peso menor, mas sendo mais
@@ -192,10 +191,10 @@
         </div>
       </section>
 
-      <section id="faq" class="js-scrollanim">
+      <section id="faq" data-scrollreveal>
         <h1 class="heading">FAQ</h1>
 
-        <dl class="faq-list js-accordion">
+        <dl class="faq-list" data-accordion>
           <dt>Qual a idade dos Animais?</dt>
           <dd>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint maiores iste, ipsum deleniti vitae
@@ -223,11 +222,11 @@
 
       </section>
 
-      <section id="contato" class="js-scrollanim">
+      <section id="contato" data-scrollreveal>
         <h1 class="main-heading">Contato</h1>
 
-        <div class="mapa">
-          <img src="img/mapa.png">
+        <div class="mapa" data-tamanho="large" data-map-location="Rio de Janeiro">
+          <img src="assets/mapa.png">
         </div>
 
         <ul class="contato-lista">
@@ -246,10 +245,7 @@
       <p>Todos os direitos reservados.</p>
     </div>
   </footer>
-
-
-  <script src="script.js"></script>
-  <!-- <script src="scriptex.js"></script> -->
+  <script type="module" src="./script/main.js"></script>
 </body>
 
 </html>

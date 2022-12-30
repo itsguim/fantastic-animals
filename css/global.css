@@ -1,53 +1,7 @@
-*,
-*::after,
-*::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62, 5%; /* = 10px = 1rem */
-}
-
-html,
-body {
-	height: 100%;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-	display: block;
-	max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-	font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	overflow-wrap: break-word;
-}
-
-ul {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-	display: block;
-}
-
-/* GLOBAL RESET - By - Italo Guimarães */
+@import url(./reset.css);
+@import url(./main.css);
+@import url(./components/navbar.css);
+@import url(./components/animal_section.css);
+@import url(./components/contact_section.css);
+@import url(./components/faq_section.css);
+@import url(./lg_screen.css);
