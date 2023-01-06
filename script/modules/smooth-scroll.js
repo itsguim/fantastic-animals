@@ -6,15 +6,15 @@ function initSmoothScroll() {
     const href = this.getAttribute('href')
     const section = document.querySelector(href)
     // Other method with less support
-    // section.scrollIntoView({
-    //   block: 'start', /* center, end, start */
-    //   behavior: 'smooth'
-    // })
-    const sectionTop = section.offsetTop
-    window.scrollTo({
-      top: sectionTop - 20,
+    section.scrollIntoView({
+      block: 'center', /* center, end, start */
       behavior: 'smooth'
     })
+    // const sectionTop = section.offsetTop
+    // window.scrollTo({
+    //   top: sectionTop - 51 /*nav-height */,
+    //   behavior: 'smooth'
+    // })
   }
   linksInternos.forEach((link) => {
     link.addEventListener('click', smoothScrolling)

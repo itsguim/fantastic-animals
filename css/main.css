@@ -1,3 +1,10 @@
+@import url(./reset.css);
+@import url(./components/navbar.css);
+@import url(./components/animal_section.css);
+@import url(./components/contact_section.css);
+@import url(./components/faq_section.css);
+@import url(./components/login_modal.css);
+@import url(./lg_screen.css);
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100;300&family=Roboto:wght@100;300&display=swap');
 
 :root {
@@ -7,6 +14,9 @@
 	--ff3: 'Quicksand', sans-serif;
 	--nav-h-large: 5.1rem;
 	--nav-h-small: 2.5rem;
+	--cl-boxes: #e54;
+	--cl-bg: #faf6ed;
+	--cl-strong: #f0bc4d;
 }
 
 .wrapper {
@@ -19,7 +29,7 @@ body {
 	position: relative;
 }
 
-/* main structure */
+/* MAIN Structure */
 
 .grid-main {
 	display: grid;
@@ -33,7 +43,7 @@ body {
 	padding: 5rem 0 3rem 1rem;
 }
 
-/* DOM - scroll-reveal.js */
+/* Scroll reveal effect DOM - {scroll-reveal.js} */
 
 [data-scrollreveal] {
 	opacity: 0;

@@ -1,0 +1,92 @@
+.modal {
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	display: none;
+}
+
+.modal.active {
+	display: flex;
+}
+
+.modal__wrapper {
+	width: 35rem;
+	background-color: #faf6ed;
+	margin: 2rem;
+	border: 10px solid #f4f4f4;
+	border-radius: 10px;
+	position: relative;
+	animation: downslide 0.2s;
+}
+
+.modal__form {
+	padding: 1.5rem;
+	border: 8px solid var(--cl-strong);
+	border-radius: 10px;
+}
+
+.modal__fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	padding-block: 1rem;
+	gap: 0.5rem;
+}
+
+.modal__label {
+	font-family: var(--ffoption);
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.modal__textinput {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 1.2rem;
+	font-family: var(--ffoption);
+}
+
+.modal__textinput:focus {
+	outline: none;
+	border: 1px solid #f0bc4d;
+}
+
+.modal__btn {
+	background-color: var(--cl-boxes);
+	color: #fff;
+	font-family: var(--ffoption);
+	font-size: 1.4rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn--submit {
+	padding: 0.5rem 1rem;
+	display: block;
+	margin-inline: auto;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	margin-block: 0.5rem;
+}
+
+.btn--close {
+	position: absolute;
+	top: -2.5rem;
+	right: -2.5rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 3.5rem;
+	height: 3.5rem;
+	border: 4px solid #fff;
+	box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.3);
+}

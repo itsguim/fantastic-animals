@@ -38,11 +38,11 @@ section#contato .main-heading {
 	background-color: #f0bc4d;
 	margin-right: 0.5rem;
 }
-
+/* footer */
 .copyright {
 	margin-top: 5rem;
-	padding-block: 1rem;
-	background-color: #f0bc4d;
+	padding-block: 0.5rem;
+	background-color: transparent;
 	font-family: var(--ffrale);
 	font-weight: bold;
 	text-align: center;

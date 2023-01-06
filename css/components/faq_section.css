@@ -18,7 +18,7 @@ section#faq .heading {
 }
 
 .faq-list dt {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	color: #d8592a;
 	font-family: var(--ffoption);
 	font-weight: bold;
@@ -50,7 +50,7 @@ section#faq .heading {
 	font-family: var(--ffoption);
 }
 
-/* DOM Manipulation - Accordion.js */
+/* DOM Manipulation - {accordion.js} */
 
 [data-accordion] dt.ativo::before {
 	width: 2.5rem;
