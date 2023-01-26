@@ -12,20 +12,31 @@
 <body>
 
   <nav data-nav-change="small" data-scroll>
-    <ul class="navbar">
-      <li>
-        <a href="#animais" class="nav-link">Animais</a>
-      </li>
-      <li>
-        <a href="#faq" class="nav-link">FAQ</a>
-      </li>
-      <li>
-        <a href="#contato" class="nav-link">Contato</a>
-      </li>
-      <li>
-        <button class="nav-link" data-modal-opener="login">Login →</button>
-      </li>
-    </ul>
+    <div class="nav__wrapper">
+
+      <div class="nav__mobile">
+        <button class="mobile__btn" data-menumobile="button">
+          MENU
+        </button>
+      </div>
+
+      <ul class="nav__list" data-menumobile="nav-list">
+        <li>
+          <a href="#animais" class="nav__list__link">Animais</a>
+        </li>
+        <li>
+          <a href="#faq" class="nav__list__link">FAQ</a>
+        </li>
+        <li>
+          <a href="#contato" class="nav__list__link">Contato</a>
+        </li>
+        <li>
+          <button class="nav__list__link" data-modal-opener="login">Login →</button>
+        </li>
+      </ul>
+
+
+    </div>
   </nav>
 
   <main>

@@ -19,7 +19,7 @@ section#faq .heading {
 
 .faq-list dt {
 	font-size: 1.1rem;
-	color: #d8592a;
+	color: var(--cl-boxes-var);
 	font-family: var(--ffoption);
 	font-weight: bold;
 	letter-spacing: 0.1rem;

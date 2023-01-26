@@ -4,6 +4,7 @@
 @import url(./components/contact_section.css);
 @import url(./components/faq_section.css);
 @import url(./components/login_modal.css);
+@import url(./components/animations.css);
 @import url(./lg_screen.css);
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100;300&family=Roboto:wght@100;300&display=swap');
 
@@ -12,9 +13,8 @@
 	--ffoption: 'Roboto', sans-serif;
 	--ffrale: 'Raleway', sans-serif;
 	--ff3: 'Quicksand', sans-serif;
-	--nav-h-large: 5.1rem;
-	--nav-h-small: 2.5rem;
 	--cl-boxes: #e54;
+	--cl-boxes-var: #d8592a;
 	--cl-bg: #faf6ed;
 	--cl-strong: #f0bc4d;
 }
@@ -25,7 +25,7 @@
 }
 
 body {
-	background-color: #faf6ed;
+	background-color: var(--cl-bg);
 	position: relative;
 }
 

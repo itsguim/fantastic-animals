@@ -1,3 +1,46 @@
+@media screen and (min-width: 765px) {
+	:root {
+		--nav-h-desk-large: 3.2rem;
+		--nav-h-desk-small: 2.7rem;
+	}
+
+	nav {
+		height: var(--nav-h-desk-large);
+	}
+
+	.nav__mobile {
+		display: none;
+	}
+
+	.nav__list {
+		display: flex;
+		justify-items: flex-start;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.nav__list__link {
+		font-size: inherit;
+		text-transform: uppercase;
+		color: #000000;
+		padding: 1rem 1rem;
+	}
+
+	.nav__list__link[data-modal-opener] {
+		background-color: #f2e0bb;
+		border-radius: 10px;
+		padding: 0.5rem 1rem;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	/* DOM - {navbar-small.js} */
+	nav.nav-small {
+		height: var(--nav-h-desk-small);
+	}
+}
+
 @media screen and (min-width: 1280px) {
 	.main-heading:not(#contato .main-heading) {
 		margin-inline: auto;
